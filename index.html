@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HUA LI</title>
+
   <style>
     :root {
       --bg: #ededed;
@@ -15,7 +16,9 @@
       --accent-strong: #315a9d;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       min-width: 1060px;
@@ -32,7 +35,8 @@
       text-decoration: none;
     }
 
-    main, footer {
+    main,
+    footer {
       width: 1060px;
       margin: 32px auto 0;
       background: var(--paper);
@@ -40,15 +44,15 @@
 
     .hero {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 250px;
+      grid-template-columns: minmax(0, 1fr) 280px;
       align-items: start;
-      gap: 140px;
-      padding: 48px 68px 38px;
+      gap: 110px;
+      padding: 52px 68px 42px;
     }
 
     .hero-photo {
       justify-self: end;
-      width: 240px;
+      width: 275px;
       margin: 0;
     }
 
@@ -58,31 +62,36 @@
       height: auto;
     }
 
-    h1, h2, h3, p { margin-top: 0; }
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
 
     h1 {
-      margin-bottom: 38px;
+      margin-bottom: 32px;
       color: var(--accent);
-      font-size: 1.75rem;
+      font-size: 2.25rem;
       line-height: 1.05;
     }
 
     .role {
-      margin-bottom: 14px;
+      margin-bottom: 18px;
       color: var(--accent);
-      font-size: 1.22rem;
+      font-size: 1.45rem;
       font-weight: 700;
     }
 
     .affiliation {
-      margin-bottom: 26px;
-      font-size: 1.08rem;
-      line-height: 1.34;
+      margin-bottom: 34px;
+      font-size: 1.25rem;
+      line-height: 1.38;
     }
 
     .contact-line {
       margin-bottom: 0;
-      font-size: 1.08rem;
+      font-size: 1.18rem;
     }
 
     .section {
@@ -142,9 +151,13 @@
       gap: 0 40px;
     }
 
-    .timeline h2 { grid-column: 1 / -1; }
+    .timeline h2 {
+      grid-column: 1 / -1;
+    }
 
-    .timeline article { display: contents; }
+    .timeline article {
+      display: contents;
+    }
 
     .timeline time {
       padding: 12px 0;
@@ -180,171 +193,207 @@
 </head>
 
 <body>
-<main>
-  <section class="hero">
-    <div>
-      <h1>HUA LI</h1>
-      <p class="role">Ph.D. Student</p>
-      <p class="affiliation">
-        Department of Industrial Engineering<br>
-        Intelligent Manufacturing Systems Lab<br>
-        Yonsei University<br>
-        Seoul, Korea
-      </p>
-      <p class="contact-line">Email: <a href="mailto:li_hua611@yonsei.ac.kr">li_hua611@yonsei.ac.kr</a></p>
-    </div>
-
-    <figure class="hero-photo">
-      <img src="./profile-football.png.jpeg?v=3" alt="HUA LI on a football field">
-    </figure>
-  </section>
-
-  <section class="section">
-    <h2>Biography</h2>
-    <p>I am a Ph.D. student in Industrial Engineering at Yonsei University, Seoul, Korea. My research interests lie in operations research, smart logistics, and AI-driven decision-making, with a particular focus on scheduling, dispatching, and optimization problems in manufacturing and logistics systems.</p>
-    <p>My recent work includes EV charging scheduling using mixed-integer linear programming and genetic algorithms, multi-agent deep reinforcement learning-based vehicle dispatching, and OHT system optimization in semiconductor fabs.</p>
-    <p>I led a project with KODATA to develop a graph neural network-based model for enterprise risk detection using firm-level information and transaction network data.</p>
-    <p>Before starting my Ph.D. studies, I founded a startup company in China, where I worked on Manufacturing Execution System (MES) and Product Data Management (PDM) projects for manufacturing enterprises.</p>
-    <p>My research aims to identify and define real-world industrial problems, and develop optimization and AI methods to solve them, bridging the gap between academic research and practical industrial applications.</p>
-  </section>
-
-  <section class="section">
-    <h2>Research Interests</h2>
-    <div class="tags">
-      <span>Smart Logistics Systems</span>
-      <span>Manufacturing Systems Planning and Scheduling</span>
-      <span>Combinatorial Optimization</span>
-      <span>Mixed-Integer Linear Programming</span>
-      <span>Graph Neural Networks</span>
-      <span>Deep Reinforcement Learning</span>
-      <span>Genetic Algorithms</span>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Selected Publications</h2>
-    <ol class="publications">
-      <li><strong>Li H.</strong>, Jeong B. Multiagent Deep Reinforcement Learning With Evolutionary Strategy for Mobile Charging Vehicles Dispatching. <em>IEEE Transactions on Neural Networks and Learning Systems</em>, 2026.</li>
-      <li>Wang Z., Jin Z., <strong>Li H.</strong>, Xiao F. Finite-Time Distributed Optimization of Nonlinear Multi-agent Systems: A Small-gain Theorem. <em>IEEE Transactions on Control of Network Systems</em>, 2026.</li>
-      <li><strong>Li H.</strong>, Jin Z. A New Look of Dispatching for Multi-objective Interbay AMHS in Semiconductor Wafer Manufacturing: A T-S Fuzzy-based Learning Approach. <em>Expert Systems with Applications</em>, 2025.</li>
-      <li>Wang Z., Jin Z., Xu J., Bao A., <strong>Li H.</strong> Robust State Agreement in Switching Networks of Nonlinear Agents with Measurement Noises and Communication Delays. <em>Nonlinear Dynamics</em>, 2025.</li>
-      <li>Jin Z., <strong>Li H.</strong>, Qin Z., Wang Z. Gradient-Free Cooperative Source-Seeking of Quadrotor Under Disturbances and Communication Constraints. <em>IEEE Transactions on Industrial Electronics</em>, 2025.</li>
-      <li>Jin Z., <strong>Li H.</strong>, Qin Z., Tian Y. Momentum-Based Distributed Disturbance Feedback Optimization of Heterogeneous Multiagent Systems. <em>IEEE Transactions on Control of Network Systems</em>, 2025.</li>
-      <li>Wang Z., Jin Z., <strong>Li H.</strong> Semi-global Asymptotic State Agreement of Nonlinear Multi-agent Systems. <em>Nonlinear Analysis: Hybrid Systems</em>, 2024.</li>
-      <li>Jin Z., <strong>Li H.</strong>, Ahn C. K. Multiagent Distributed Source Seeking Under Globally Coupled Constraints. <em>IEEE Internet of Things Journal</em>, 2024.</li>
-      <li><strong>Li H.</strong>, Son D., Jeong B. Electric Vehicle Charging Scheduling with Mobile Charging Stations. <em>Journal of Cleaner Production</em>, 2024.</li>
-      <li>Jin Z., <strong>Li H.</strong>, Xu J., Chen J. A Gradient-Free Source Seeking Strategy. <em>IEEE ICIEA</em>, 2024.</li>
-    </ol>
-  </section>
-
-  <section class="section">
-    <h2>Talks</h2>
-    <ul class="talks">
-      <li><strong>Li H.</strong>, Jeong B. Distance-Based Discount Policy Optimization for Mobile Charging Vehicles. INFORMS Annual Meeting 2025.</li>
-      <li><strong>Li H.</strong>, Jeong B. 심층 강화학습을 활용한 이동식 충전 차량의 동적 배차 문제. Korea SCM Conference 2024 Fall.</li>
-      <li><strong>Li H.</strong>, Jeong B. Multi-Objective Optimization of Mobile Charging Vehicles Dispatching Considering Customer Satisfaction. Korea SCM Conference 2024 Spring.</li>
-      <li><strong>Li H.</strong>, Jeong B. 이동식 충전소를 이용한 전기차 충전 스케줄링. Korea SCM Conference 2022 Spring.</li>
-    </ul>
-  </section>
-
-  <section class="section timeline">
-    <h2>Projects</h2>
-    <article>
-      <time>2026</time>
+  <main>
+    <section class="hero">
       <div>
-        <h3>Supply Chain Risk Prediction Using Graph Neural Networks</h3>
-        <p>KODATA | Project Manager &amp; Technical Lead</p>
-      </div>
-    </article>
-    <article>
-      <time>2024 - Present</time>
-      <div>
-        <h3>Brain Korea 21 (BK21) Program</h3>
-        <p>Yonsei University</p>
-      </div>
-    </article>
-    <article>
-      <time>2021 - 2024</time>
-      <div>
-        <h3>Urban Logistics Optimization Research</h3>
-        <p>National Research Foundation of Korea (NRF)</p>
-      </div>
-    </article>
-  </section>
+        <h1>HUA LI</h1>
 
-  <section class="section">
-    <h2>Honors and Awards</h2>
-    <ul class="awards">
-      <li>Chinese Government Award for Outstanding Self-financed Students Abroad, 2025</li>
-      <li>Ban Ki-moon Global Environmental Forum (GEEF) Research Award - Best Award, 2025</li>
-      <li>Yonsei Graduate Fellowship (YGF), 2024</li>
-      <li>Outstanding International Student Scholarship, Yonsei University (Ph.D.), 2022 - 2024</li>
-      <li>Outstanding International Student Scholarship, Yonsei University (M.S.), 2020 - 2022</li>
-    </ul>
-  </section>
+        <p class="role">Ph.D. Student</p>
 
-  <section class="section timeline">
-    <h2>Industry Experience</h2>
-    <article>
-      <time>2014 - 2020</time>
-      <div>
-        <h3>Founder &amp; Project Manager</h3>
-        <p>Maiyisi Software, Qingdao, China</p>
-        <ul>
-          <li>Sailun Group - R&amp;D PDM System Development</li>
-          <li>Huasheng &amp; Hongsheng Group - MES Development</li>
-          <li>Tianjin Wanda Group - MES/PDM Consulting</li>
-        </ul>
-      </div>
-    </article>
-    <article>
-      <time>2023</time>
-      <div>
-        <h3>Manufacturing Logistic Consultant</h3>
-        <p>Safe-run Group</p>
-      </div>
-    </article>
-  </section>
+        <p class="affiliation">
+          Department of Industrial Engineering<br>
+          Intelligent Manufacturing Systems Lab<br>
+          Yonsei University<br>
+          Seoul, Korea
+        </p>
 
-  <section class="section timeline">
-    <h2>Education</h2>
-    <article>
-      <time>Jul. 2022 - Present</time>
-      <div>
-        <h3>Ph.D. in Industrial Engineering</h3>
-        <p>Yonsei University</p>
+        <p class="contact-line">
+          Email: <a href="mailto:li_hua611@yonsei.ac.kr">li_hua611@yonsei.ac.kr</a>
+        </p>
       </div>
-    </article>
-    <article>
-      <time>Sep. 2020 - Jul. 2022</time>
-      <div>
-        <h3>M.S. in Industrial Engineering</h3>
-        <p>Yonsei University</p>
-      </div>
-    </article>
-  </section>
 
-  <section class="section timeline">
-    <h2>Teaching Experience</h2>
-    <article>
-      <time>2023 - 2025</time>
-      <div>
-        <h3>Teaching Assistant</h3>
-        <p>IIE5102 Operations Research</p>
-      </div>
-    </article>
-    <article>
-      <time>2023 - Present</time>
-      <div>
-        <h3>Teaching Assistant</h3>
-        <p>IIE7701 Smart Factory</p>
-      </div>
-    </article>
-  </section>
-</main>
+      <figure class="hero-photo">
+        <img src="./profile-football.png.jpeg?v=3" alt="HUA LI on a football field">
+      </figure>
+    </section>
 
-<footer>
-  Copyright 2026 HUA LI.
-</footer>
+    <section class="section">
+      <h2>Biography</h2>
+
+      <p>I am a Ph.D. student in Industrial Engineering at Yonsei University, Seoul, Korea. My research interests lie in operations research, smart logistics, and AI-driven decision-making, with a particular focus on scheduling, dispatching, and optimization problems in manufacturing and logistics systems.</p>
+
+      <p>My recent work includes EV charging scheduling using mixed-integer linear programming and genetic algorithms, multi-agent deep reinforcement learning-based vehicle dispatching, and OHT system optimization in semiconductor fabs.</p>
+
+      <p>I led a project with KODATA to develop a graph neural network-based model for enterprise risk detection using firm-level information and transaction network data.</p>
+
+      <p>Before starting my Ph.D. studies, I founded a startup company in China, where I worked on Manufacturing Execution System (MES) and Product Data Management (PDM) projects for manufacturing enterprises.</p>
+
+      <p>My research aims to identify and define real-world industrial problems, and develop optimization and AI methods to solve them, bridging the gap between academic research and practical industrial applications.</p>
+    </section>
+
+    <section class="section">
+      <h2>Research Interests</h2>
+
+      <div class="tags">
+        <span>Smart Logistics Systems</span>
+        <span>Manufacturing Systems Planning and Scheduling</span>
+        <span>Combinatorial Optimization</span>
+        <span>Mixed-Integer Linear Programming</span>
+        <span>Graph Neural Networks</span>
+        <span>Deep Reinforcement Learning</span>
+        <span>Genetic Algorithms</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Selected Publications</h2>
+
+      <ol class="publications">
+        <li><strong>Li H.</strong>, Jeong B. Multiagent Deep Reinforcement Learning With Evolutionary Strategy for Mobile Charging Vehicles Dispatching. <em>IEEE Transactions on Neural Networks and Learning Systems</em>, 2026.</li>
+
+        <li>Wang Z., Jin Z., <strong>Li H.</strong>, Xiao F. Finite-Time Distributed Optimization of Nonlinear Multi-agent Systems: A Small-gain Theorem. <em>IEEE Transactions on Control of Network Systems</em>, 2026.</li>
+
+        <li><strong>Li H.</strong>, Jin Z. A New Look of Dispatching for Multi-objective Interbay AMHS in Semiconductor Wafer Manufacturing: A T-S Fuzzy-based Learning Approach. <em>Expert Systems with Applications</em>, 2025.</li>
+
+        <li>Wang Z., Jin Z., Xu J., Bao A., <strong>Li H.</strong> Robust State Agreement in Switching Networks of Nonlinear Agents with Measurement Noises and Communication Delays. <em>Nonlinear Dynamics</em>, 2025.</li>
+
+        <li>Jin Z., <strong>Li H.</strong>, Qin Z., Wang Z. Gradient-Free Cooperative Source-Seeking of Quadrotor Under Disturbances and Communication Constraints. <em>IEEE Transactions on Industrial Electronics</em>, 2025.</li>
+
+        <li>Jin Z., <strong>Li H.</strong>, Qin Z., Tian Y. Momentum-Based Distributed Disturbance Feedback Optimization of Heterogeneous Multiagent Systems. <em>IEEE Transactions on Control of Network Systems</em>, 2025.</li>
+
+        <li>Wang Z., Jin Z., <strong>Li H.</strong> Semi-global Asymptotic State Agreement of Nonlinear Multi-agent Systems. <em>Nonlinear Analysis: Hybrid Systems</em>, 2024.</li>
+
+        <li>Jin Z., <strong>Li H.</strong>, Ahn C. K. Multiagent Distributed Source Seeking Under Globally Coupled Constraints. <em>IEEE Internet of Things Journal</em>, 2024.</li>
+
+        <li><strong>Li H.</strong>, Son D., Jeong B. Electric Vehicle Charging Scheduling with Mobile Charging Stations. <em>Journal of Cleaner Production</em>, 2024.</li>
+
+        <li>Jin Z., <strong>Li H.</strong>, Xu J., Chen J. A Gradient-Free Source Seeking Strategy. <em>IEEE ICIEA</em>, 2024.</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>Talks</h2>
+
+      <ul class="talks">
+        <li><strong>Li H.</strong>, Jeong B. Distance-Based Discount Policy Optimization for Mobile Charging Vehicles. INFORMS Annual Meeting 2025.</li>
+
+        <li><strong>Li H.</strong>, Jeong B. 심층 강화학습을 활용한 이동식 충전 차량의 동적 배차 문제. Korea SCM Conference 2024 Fall.</li>
+
+        <li><strong>Li H.</strong>, Jeong B. Multi-Objective Optimization of Mobile Charging Vehicles Dispatching Considering Customer Satisfaction. Korea SCM Conference 2024 Spring.</li>
+
+        <li><strong>Li H.</strong>, Jeong B. 이동식 충전소를 이용한 전기차 충전 스케줄링. Korea SCM Conference 2022 Spring.</li>
+      </ul>
+    </section>
+
+    <section class="section timeline">
+      <h2>Projects</h2>
+
+      <article>
+        <time>2026</time>
+        <div>
+          <h3>Supply Chain Risk Prediction Using Graph Neural Networks</h3>
+          <p>KODATA | Project Manager &amp; Technical Lead</p>
+        </div>
+      </article>
+
+      <article>
+        <time>2024 - Present</time>
+        <div>
+          <h3>Brain Korea 21 (BK21) Program</h3>
+          <p>Yonsei University</p>
+        </div>
+      </article>
+
+      <article>
+        <time>2021 - 2024</time>
+        <div>
+          <h3>Urban Logistics Optimization Research</h3>
+          <p>National Research Foundation of Korea (NRF)</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Honors and Awards</h2>
+
+      <ul class="awards">
+        <li>Chinese Government Award for Outstanding Self-financed Students Abroad, 2025</li>
+        <li>Ban Ki-moon Global Environmental Forum (GEEF) Research Award - Best Award, 2025</li>
+        <li>Yonsei Graduate Fellowship (YGF), 2024</li>
+        <li>Outstanding International Student Scholarship, Yonsei University (Ph.D.), 2022 - 2024</li>
+        <li>Outstanding International Student Scholarship, Yonsei University (M.S.), 2020 - 2022</li>
+      </ul>
+    </section>
+
+    <section class="section timeline">
+      <h2>Industry Experience</h2>
+
+      <article>
+        <time>2014 - 2020</time>
+        <div>
+          <h3>Founder &amp; Project Manager</h3>
+          <p>Maiyisi Software, Qingdao, China</p>
+
+          <ul>
+            <li>Sailun Group - R&amp;D PDM System Development</li>
+            <li>Huasheng &amp; Hongsheng Group - MES Development</li>
+            <li>Tianjin Wanda Group - MES/PDM Consulting</li>
+          </ul>
+        </div>
+      </article>
+
+      <article>
+        <time>2023</time>
+        <div>
+          <h3>Manufacturing Logistic Consultant</h3>
+          <p>Safe-run Group</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section timeline">
+      <h2>Education</h2>
+
+      <article>
+        <time>Jul. 2022 - Present</time>
+        <div>
+          <h3>Ph.D. in Industrial Engineering</h3>
+          <p>Yonsei University</p>
+        </div>
+      </article>
+
+      <article>
+        <time>Sep. 2020 - Jul. 2022</time>
+        <div>
+          <h3>M.S. in Industrial Engineering</h3>
+          <p>Yonsei University</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section timeline">
+      <h2>Teaching Experience</h2>
+
+      <article>
+        <time>2023 - 2025</time>
+        <div>
+          <h3>Teaching Assistant</h3>
+          <p>IIE5102 Operations Research</p>
+        </div>
+      </article>
+
+      <article>
+        <time>2023 - Present</time>
+        <div>
+          <h3>Teaching Assistant</h3>
+          <p>IIE7701 Smart Factory</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    Copyright 2026 HUA LI.
+  </footer>
 </body>
 </html>
